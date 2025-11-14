@@ -1,3 +1,4 @@
+import React from 'react';
 import { PersonalInfo, Education, Publication, Project, Skill, GalleryItem, Stat, NewsItem, ResearchItem, Experience } from '@/types';
 
 export const personalInfo: PersonalInfo = {
@@ -7,18 +8,28 @@ export const personalInfo: PersonalInfo = {
   phone: '+8801764223436',
   address: 'Dhaka, Bangladesh',
   location: 'Dhaka, Bangladesh',
-  bio: 'I am a Machine Learning Engineer and Robotics Researcher with a passion for developing innovative solutions using deep learning, computer vision, and robotic manipulation. My research interests include Robotics, Control Theory, Deep Learning, Image Classification and Localization, and Embedded Systems.',
+  bio: (
+    <>
+      I am currently working as a Machine Learning Engineer at{' '}
+      <a
+        href="https://www.aci-bd.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[var(--accent)] hover:underline"
+      >
+        ACI PLC
+      </a>
+      . Where I am working on different projects mainly on computer vision as well as scaling up existing projects, making them production grade software.
+      <br />
+      I have worked as Software Team Lead on the Mars Rover Team at Bangladesh University of Engineering and Technology during my graduation. I developed many softwares for the rover as well as created the arm manipulation and teleop software stack bottom up.
+    </>
+  ),
   profileImage: '/images/profile.png',
   socialLinks: [
     { platform: 'GitHub', url: 'https://github.com/TanvirTaaha', icon: '💻' },
     { platform: 'LinkedIn', url: 'https://linkedin.com/in/tanvir-taaha', icon: '💼' },
     { platform: 'Website', url: 'https://TanvirTaaha.github.io', icon: '🌐' },
     { platform: 'Email', url: 'mailto:tanvir.taaha@gmail.com', icon: '✉️' },
-  ],
-  stats: [
-    { id: '1', value: '5+', label: 'Years of Experience' },
-    { id: '2', value: '10+', label: 'Projects Completed' },
-    { id: '3', value: '4+', label: 'Rover Competitions' },
   ],
 };
 

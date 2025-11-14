@@ -1,3 +1,5 @@
+import React from 'react';
+
 export interface Publication {
   id: string;
   title: string;
@@ -43,10 +45,9 @@ export interface PersonalInfo {
   phone?: string;
   address?: string;
   location?: string;
-  bio: string;
+  bio: string | React.ReactNode;
   profileImage: string;
   socialLinks: SocialLink[];
-  stats?: Stat[];
 }
 
 export interface Stat {

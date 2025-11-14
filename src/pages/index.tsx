@@ -27,12 +27,12 @@ export default function Home() {
     <Layout info={personalInfo} cvUrl={cvUrl}>
       <Hero info={personalInfo} />
       <Projects projects={projects} />
-      <Skills skills={skills} />
       <News news={news} />
       <Research research={research} />
       <Publications publications={publications} />
       <Education education={education} experience={experience} />
       <Gallery items={galleryItems} />
+      <Skills skills={skills} />
       <GitHubProfile />
       <Contact info={personalInfo} />
     </Layout>

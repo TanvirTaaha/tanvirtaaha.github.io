@@ -47,47 +47,49 @@ export default function Projects({ projects }: ProjectsProps) {
                   <p className="text-[var(--text-secondary)] text-sm mb-3 leading-relaxed">
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap gap-1.5 mb-3">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-2 py-0.5 bg-[var(--bg-secondary)] text-[var(--text-secondary)] rounded text-xs border border-[var(--border)]"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {project.githubUrl && (
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block px-3 py-1.5 bg-[var(--accent)] text-white rounded hover:bg-[var(--accent-hover)] transition-all duration-200 text-xs font-medium"
-                      >
-                        GitHub
-                      </a>
-                    )}
-                    {project.pdfUrl && (
-                      <a
-                        href={project.pdfUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block px-3 py-1.5 bg-[var(--bg-card)] border border-[var(--border)] text-[var(--text-primary)] rounded hover:bg-[var(--hover-bg)] hover:border-[var(--accent)] transition-all duration-200 text-xs font-medium"
-                      >
-                        PDF
-                      </a>
-                    )}
-                    {project.presentationPdfUrl && (
-                      <a
-                        href={project.presentationPdfUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block px-3 py-1.5 bg-[var(--bg-card)] border border-[var(--border)] text-[var(--text-primary)] rounded hover:bg-[var(--hover-bg)] hover:border-[var(--accent)] transition-all duration-200 text-xs font-medium"
-                      >
-                        Presentation
-                      </a>
-                    )}
+                  <div className="flex flex-row items-center gap-4 mb-3">
+                    <div className="flex flex-wrap gap-1.5">
+                      {project.technologies.map((tech) => (
+                        <span
+                          key={tech}
+                          className="px-2 py-0.5 bg-[var(--bg-secondary)] text-[var(--text-secondary)] rounded text-xs border border-[var(--border)]"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {project.githubUrl && (
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block px-3 py-1.5 bg-[var(--accent)] text-white rounded hover:bg-[var(--accent-hover)] transition-all duration-200 text-xs font-medium"
+                        >
+                          GitHub
+                        </a>
+                      )}
+                      {project.pdfUrl && (
+                        <a
+                          href={project.pdfUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block px-3 py-1.5 bg-[var(--bg-card)] border border-[var(--border)] text-[var(--text-primary)] rounded hover:bg-[var(--hover-bg)] hover:border-[var(--accent)] transition-all duration-200 text-xs font-medium"
+                        >
+                          PDF
+                        </a>
+                      )}
+                      {project.presentationPdfUrl && (
+                        <a
+                          href={project.presentationPdfUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block px-3 py-1.5 bg-[var(--bg-card)] border border-[var(--border)] text-[var(--text-primary)] rounded hover:bg-[var(--hover-bg)] hover:border-[var(--accent)] transition-all duration-200 text-xs font-medium"
+                        >
+                          Presentation
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>

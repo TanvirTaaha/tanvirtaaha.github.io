@@ -55,8 +55,7 @@ src/
 ├── pages/                  # Next.js pages
 │   ├── _app.tsx            # App wrapper with ThemeProvider
 │   ├── _document.tsx       # Document structure
-│   ├── index.tsx           # Home page (renders all sections)
-│   └── api/                # API routes (if needed)
+│   └── index.tsx           # Home page (renders all sections)
 │
 ├── styles/                 # Global styles
 │   └── globals.css         # CSS variables, theme colors, global styles
